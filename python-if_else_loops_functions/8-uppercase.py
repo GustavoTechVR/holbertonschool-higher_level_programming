@@ -1,12 +1,7 @@
 #!/usr/bin/python3
 def uppercase(s):
     for char in s:
-        upper_char = char
-        if ord('a') <= ord(char) <= ord('z'):
-            upper_char = chr(ord(char) - ord('a') + ord('A'))
+        diff = ord('a') - ord('A')
+        upper_char = chr(ord(char) - diff) if 'a' <= char <= 'z' else char
         print("{}".format(upper_char), end="")
     print()
-
-
-if __name__ == "__main__":
-    uppercase = __import__('8-uppercase').uppercase
