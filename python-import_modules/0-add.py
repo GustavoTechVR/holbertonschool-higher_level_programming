@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-if _name_ == "_main_":
+if __name__ == "__main__":
     a = 1
     b = 2
     exec(open("add_0.py").read())
