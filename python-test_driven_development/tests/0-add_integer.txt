@@ -3,7 +3,11 @@
 >>> add_integer = __import__('0-add_integer').add_integer
 
 # Regular Test
->>> add_integer(5, 3)
+>>> add_integer(2, 5)
+7
+
+# Regular Test
+>>> add_integer(10, -2)
 8
 
 # Test present: integer casting
