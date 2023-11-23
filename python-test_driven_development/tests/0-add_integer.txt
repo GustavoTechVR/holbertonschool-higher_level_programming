@@ -1,3 +1,41 @@
-guillaume@ubuntu:~/$ python3 -m doctest -v ./tests/0-add_integer.txt | tail -2
-9 passed and 0 failed.
-Test passed.
+# Test cases
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+# Regular Test
+>>> add_integer(5, 3)
+8
+
+# Test present: integer casting
+>>> add_integer(5.5, 3.3)
+8
+
+# Test present: check type
+>>> add_integer("5", 3)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+# Test present: regular addition
+>>> add_integer(10, 20)
+30
+
+# Test present: Float overflow
+>>> add_integer(1e100, 1e100)
+Traceback (most recent call last):
+    ...
+OverflowError: int too large to convert to float
+
+# Test present: cannot convert float NaN to integer
+>>> add_integer(float('nan'), 3)
+Traceback (most recent call last):
+    ...
+ValueError: cannot convert float NaN to integer
+
+# Test present: missing one argument
+>>> add_integer(5)
+103
+
+# Test present: missing two arguments
+>>> add_integer()
+196
