@@ -42,4 +42,6 @@ ValueError: cannot convert float NaN to integer
 
 # Test present: missing two arguments
 >>> add_integer()
-196
+Traceback (most recent call last):
+    ...
+TypeError: add_integer() missing 1 required positional argument: 'b'
