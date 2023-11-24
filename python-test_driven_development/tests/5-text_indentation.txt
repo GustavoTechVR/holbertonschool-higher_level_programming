@@ -30,3 +30,15 @@ Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres
 # Correct output - case: “Holberton School”
 >>> text_indentation("Holberton School")
 Holberton School
+
+# Correct output case
+>>> text_indentation("Holberton.\nSchool?\nHow are you:\nJohn")
+Holberton.
+School?
+How are you:
+John
+
+# Correct output case
+>>> text_indentation("Holberton.\nSchool")
+Holberton.
+School
