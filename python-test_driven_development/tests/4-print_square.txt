@@ -1,0 +1,37 @@
+# Test cases
+
+>>> print_square = __import__('4-print_square').print_square
+
+# Regular Test
+>>> print_square(4)
+####
+####
+####
+####
+
+# Regular Test
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+# Regular Test
+>>> print_square(0)
+# (empty line)
+
+# Regular Test
+>>> print_square(1)
+#
+
+# Test present: size must be >= 0
+>>> print_square(-1)
+Traceback (most recent call last):
+    ...
+ValueError: size must be >= 0
