@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 class Student:
     """Defines a student with public instance attributes and a to_json"""
 
