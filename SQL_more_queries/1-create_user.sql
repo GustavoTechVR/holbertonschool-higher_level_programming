@@ -9,4 +9,3 @@ GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost' WITH GRANT OPTION;
 
 -- Flush privileges to apply changes
 FLUSH PRIVILEGES;
-
